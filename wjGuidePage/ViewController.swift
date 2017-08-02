@@ -69,6 +69,7 @@ extension ViewController {
     // 修改存在本地的数据
     func wjModifyDataAction(_ btn : UIButton) {
         UserDefaults.standard.set(false, forKey: "isShowGuidePage")
+        self.dismiss(animated: true, completion: nil)
     }
     
     // 进行服务器选择界面的跳转

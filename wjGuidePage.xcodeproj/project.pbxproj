@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BA4C5AF1F32129B0019C8BE /* serverListData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BA4C5AE1F32129A0019C8BE /* serverListData.plist */; };
+		9BA4C5B11F3213020019C8BE /* wjServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4C5B01F3213020019C8BE /* wjServerModel.swift */; };
 		C46EBAF91F31A82D0092EFE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46EBAF81F31A82D0092EFE0 /* AppDelegate.swift */; };
 		C46EBAFB1F31A82D0092EFE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46EBAFA1F31A82D0092EFE0 /* ViewController.swift */; };
 		C46EBAFE1F31A82D0092EFE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46EBAFC1F31A82D0092EFE0 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9BA4C5AE1F32129A0019C8BE /* serverListData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = serverListData.plist; sourceTree = "<group>"; };
+		9BA4C5B01F3213020019C8BE /* wjServerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wjServerModel.swift; sourceTree = "<group>"; };
 		C46EBAF51F31A82D0092EFE0 /* wjGuidePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wjGuidePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46EBAF81F31A82D0092EFE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C46EBAFA1F31A82D0092EFE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				C46EBAFA1F31A82D0092EFE0 /* ViewController.swift */,
 				C46EBB181F31A8F60092EFE0 /* wjGuideVC.swift */,
 				C46EBB221F31CB200092EFE0 /* wjServerSelectVC.swift */,
+				9BA4C5B01F3213020019C8BE /* wjServerModel.swift */,
+				9BA4C5AE1F32129A0019C8BE /* serverListData.plist */,
 				C46EBB1A1F31B8320092EFE0 /* data.plist */,
 				C46EBAFC1F31A82D0092EFE0 /* Main.storyboard */,
 				C46EBAFF1F31A82D0092EFE0 /* Assets.xcassets */,
@@ -189,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA4C5AF1F32129B0019C8BE /* serverListData.plist in Resources */,
 				C46EBB031F31A82D0092EFE0 /* LaunchScreen.storyboard in Resources */,
 				C46EBB001F31A82D0092EFE0 /* Assets.xcassets in Resources */,
 				C46EBB1B1F31B8320092EFE0 /* data.plist in Resources */,
@@ -212,6 +219,7 @@
 			files = (
 				C46EBB191F31A8F60092EFE0 /* wjGuideVC.swift in Sources */,
 				C46EBAFB1F31A82D0092EFE0 /* ViewController.swift in Sources */,
+				9BA4C5B11F3213020019C8BE /* wjServerModel.swift in Sources */,
 				C46EBB231F31CB200092EFE0 /* wjServerSelectVC.swift in Sources */,
 				C46EBAF91F31A82D0092EFE0 /* AppDelegate.swift in Sources */,
 			);
