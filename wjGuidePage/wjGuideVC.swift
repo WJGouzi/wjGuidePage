@@ -30,7 +30,9 @@ class wjGuideVC: UIViewController {
         self.wjNavgationSettings()
     }
     
-    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
     
     // ui设置
     func wjUISettings() {
@@ -42,12 +44,12 @@ class wjGuideVC: UIViewController {
             
         }
         let imageCount : Double = Double(self.images.count)
-        let screenW = self.view.frame.size.width
-        let screenH = self.view.frame.size.height
+        let screenW = UIScreen.main.bounds.size.width //self.view.frame.size.width
+        let screenH = UIScreen.main.bounds.size.height // self.view.frame.size.height
         
         // 创建轮播图
         let scrollView = UIScrollView()
-        scrollView.frame = self.view.frame
+        scrollView.frame = CGRect(x: 0, y: 0, width: screenW, height: screenH) //self.view.frame
         scrollView.isPagingEnabled = true
         scrollView.bounces = false
         scrollView.contentSize = CGSize(width: Double(screenW) * imageCount, height: 0)
@@ -85,6 +87,7 @@ class wjGuideVC: UIViewController {
     func wjNavgationSettings() {
         self.navigationController?.navigationBar.isHidden = true
     }
+    
     
 }
 
