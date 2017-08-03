@@ -15,7 +15,6 @@ class wjServerSelectVC: UIViewController {
     var passwordTF : UITextField!
     
     
-    
     // 懒加载
     lazy var wjServerListArr : NSMutableArray = {
         let dataArray = NSArray(contentsOfFile: Bundle.main.path(forResource: "serverListData", ofType: "plist")!)

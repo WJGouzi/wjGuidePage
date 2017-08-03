@@ -118,7 +118,7 @@ extension wjGuideVC {
         vc.navigationController?.navigationBar.isHidden = false
         // 把已经出现过的引导页的结果记录到本地
         UserDefaults.standard.set(true, forKey: "isShowGuidePage")
-
+        // 这个地方完全可以将app的version也存到本地去，然后在每次进入到app的时候就判断版本号
         let app = AppDelegate()
         let nav = UINavigationController(rootViewController: vc)
         app.window?.rootViewController = nav
