@@ -30,6 +30,7 @@ class wjGuideVC: UIViewController {
         self.wjNavgationSettings()
     }
     
+    // 隐藏状态栏
     override var prefersStatusBarHidden: Bool{
         return true
     }
@@ -63,7 +64,6 @@ class wjGuideVC: UIViewController {
         // 创建图片
         for i in 0..<Int(imageCount) {
             let imageView = UIImageView()
-            //        imageView.autoresizingMask = UIViewAutoresizing.flexibleWidth + UIViewAutoresizing.flexibleHeight
             imageView.image = UIImage(named: "gagi\(i + 1)")
             imageView.frame = CGRect(x: Double(screenW) * Double(i), y: 0, width: Double(screenW), height: Double(screenH))
             imageView.isUserInteractionEnabled = true // 为的是响应链能够被传递，不然后添加在其上面的按钮的点击事件就不能被执行了
